@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack Exercise</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-left">Leaderboard</h1>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h2 class="card-title">Recent scores</h2>
+              <button type="reset" class="btn btn-secondary">Refresh</button>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td class="col-1">Name</td>
+                    <td class="col-6">100</td>
+                  </tr>
+                  <tr class="table-light">
+                    <td class="col-1">Name</td>
+                    <td class="col-6">20</td>
+                  </tr>
+                  <tr>
+                    <td class="col-1">Name</td>
+                    <td class="col-6">50</td>
+                  </tr>
+                  <tr class="table-light">
+                    <td class="col-1">Name</td>
+                    <td class="col-6">125</td>
+                  </tr>
+                  <tr>
+                    <td class="col-1">Name</td>
+                    <td class="col-6">78</td>
+                  </tr>
+                  <tr class="table-light">
+                    <td class="col-1">Name</td>
+                    <td class="col-6">77</td>
+                  </tr>
+                  <tr>
+                    <td class="col-1">Name</td>
+                    <td class="col-6">42</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Add your score</h2>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Score"
+                  />
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
