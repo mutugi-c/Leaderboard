@@ -27,7 +27,7 @@ h2 {
 
 .card-header {
   background-color: darkslategray;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Form */
@@ -41,9 +41,18 @@ h2 {
 }
 
 #scores-table tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #scores-table td {
   padding: 10px;
+}
+
+/* Buttons */
+.btn-light {
+  background: #f5f5f5;
+}
+
+.btn-dark {
+  background: darkslategray;
 }
