@@ -22,7 +22,7 @@ refreshBtn.addEventListener('click', async () => {
       scoresTable.appendChild(newScore);
     });
   } catch (error) {
-    return error;
+    alert('Error in fetching scores', error);
   }
 });
 
@@ -54,6 +54,6 @@ addScoreForm.addEventListener('submit', async (event) => {
     );
     addScoreForm.reset();
   } catch (error) {
-   return error;
+    alert('Error in adding scores', error);
   }
 });
