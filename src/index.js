@@ -7,7 +7,7 @@ const scoresTable = document.getElementById('scores-table');
 refreshBtn.addEventListener('click', async () => {
   try {
     const response = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WUuOnoz8VP2uepBIRJdR/scores/'
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WUuOnoz8VP2uepBIRJdR/scores/',
     );
     const data = await response.json();
 
@@ -22,7 +22,7 @@ refreshBtn.addEventListener('click', async () => {
       scoresTable.appendChild(newScore);
     });
   } catch (error) {
-    console.error(error);
+    return error;
   }
 });
 
@@ -38,7 +38,7 @@ addScoreForm.addEventListener('submit', async (event) => {
 
   const data = {
     user: userInput,
-    score: parseInt(scoreInput),
+    score: parseInt(scoreInput, 10),
   };
 
   try {
@@ -50,10 +50,10 @@ addScoreForm.addEventListener('submit', async (event) => {
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
-      }
+      },
     );
     addScoreForm.reset();
   } catch (error) {
-    console.error(error);
+   return error;
   }
 });
