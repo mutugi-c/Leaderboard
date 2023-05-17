@@ -1,7 +1,7 @@
 /* Typography */
 body {
   background-color: #f2f2f2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
 }
 
@@ -12,7 +12,8 @@ body {
   margin: 10rem auto 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
 }
 
@@ -26,7 +27,7 @@ h2 {
 
 .card-header {
   background-color: darkslategray;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Form */
@@ -34,3 +35,15 @@ h2 {
   margin-top: 4.5rem;
 }
 
+/* Table */
+#scores-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#scores-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+#scores-table td {
+  padding: 10px;
+}
