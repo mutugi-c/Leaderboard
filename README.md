@@ -46,6 +46,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Easy navigation**
+- **Built with webpack**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- This project is yet to be deployed.
+- [Live demo link](https://mutugi-c.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
